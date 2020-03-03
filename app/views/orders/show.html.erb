@@ -4,6 +4,20 @@
     <h1>Order #<%= @order.id %></h1>
   </header>
 
+  <h3>Emailed to: <%= @order.email %> </h3>
+
+  <table class="table">
+  <tr class="text-center">
+    <td colspan="2">Item</td>
+    <td>Unit price</td>
+    <td>Quantity</td>
+    <td>Total</td>
+  </tr>
+    <% @order_info.each do |order| %>
+      <%= render 'item', product: order[0], line_item: order[1] %>
+    <% end %>
+  </table>
+
   <div class="order-summary jumbotron">
     <h4>Thank you for your order!</h4>
   </div>
