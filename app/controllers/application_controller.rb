@@ -15,13 +15,9 @@ class ApplicationController < ActionController::Base
   end
 
   def enhanced_order(id)
-    # records_array = ActiveRecord::Base.connection.execute("SELECT image, order_id, line_items.quantity, total_price_cents, name, description FROM products JOIN line_items ON products.id = line_items.product_id WHERE order_id = 6")    
-    # @order_items = Product.joins(:line_items).where("line_items.order_id = 3").map {|product| {product:product}}
-    # Using select seems to stop rails from being able to find images. Tried for 2 hours to do this with one query. Extremely useful rails, 10/10, great job
     order_products = Product.joins(:line_items).where("line_items.order_id = ?", id)
     order_info = LineItem.where("order_id = ?", id)
-    order_products.map.with_index {|product, index| [product, order_info[index]]}
-    # LineItem.joins(:products).where("order_id=3").select("products.name, line_items.*")
+    order_products.map.with_index {|product, index| [product, order_info[index]] }
   end
 
   helper_method :enhanced_order
