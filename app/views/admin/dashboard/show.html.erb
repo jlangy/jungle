@@ -1,2 +1,14 @@
 <h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+
+<div class="jumbotron">
+  <h1 class="display-4">Product Information</h1>
+  <ul class="list-group">
+
+    <li class="list-group-item">Product types: <%= @products %></li>
+    <li class="list-group-item">Product categories: <%= @categories %></li>
+  </ul>
+  <%= link_to [:admin, :products] do %>
+  <button class="btn btn-info">Products</button>
+  <%end%>
+
+</div>
