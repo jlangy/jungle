@@ -16,7 +16,12 @@
     <% @order_info.each do |order| %>
       <%= render 'item', product: order[0], line_item: order[1] %>
     <% end %>
+  <tr>
+    <td colspan="3">Total: </td>
+    <td><%= humanized_money_with_symbol @order.total_cents %></td>
+  </tr>
   </table>
+
 
   <div class="order-summary jumbotron">
     <h4>Thank you for your order!</h4>
