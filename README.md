@@ -1,6 +1,10 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 4.2
+
+Final Product
+
+!['Desktop Display'](https://github.com/jlangy/tweeter/blob/master/docs/full-size.png)
 
 
 ## Setup
@@ -17,11 +21,10 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 ## Stripe Testing
 
 Use Credit Card # 4111 1111 1111 1111 for testing success scenarios.
-
 More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Dependencies
 
-* Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
+* Rails 4.2
 * PostgreSQL 9.x
 * Stripe
