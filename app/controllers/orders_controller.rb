@@ -3,6 +3,7 @@ class OrdersController < ApplicationController
   def show
     @order = Order.find(params[:id])
     @order_info = enhanced_order(params[:id])
+    @user = User.find_by(id: session[:user_id])
   end
 
   def create

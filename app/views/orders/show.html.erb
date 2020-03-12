@@ -4,7 +4,7 @@
     <h1>Order #<%= @order.id %></h1>
   </header>
 
-  <h3>Emailed to: <%= @order.email %> </h3>
+  <h3>Emailed to: <%= @user ? @user.email : "kvirani@gmail.com" %> </h3>
 
   <table class="table">
   <tr class="text-center">

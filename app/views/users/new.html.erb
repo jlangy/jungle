@@ -2,7 +2,8 @@
 
 <%= form_for :user, url: '/users'  do |f| %>
 
-  <label for="user_name"> Name: </label> <%= f.text_field :name, class: 'form-control' %>
+  <label for="user_name"> First Name: </label> <%= f.text_field :first_name, class: 'form-control' %>
+  <label for="user_name"> Last Name: </label> <%= f.text_field :last_name, class: 'form-control' %>
   <label for="user_email"> Email: </label> <%= f.text_field :email, class: 'form-control' %>
   <label for="user_password"> Password: </label> <%= f.password_field :password, class: 'form-control' %>
   <label for="user_password_confirmation"> Password Confirmation: </label> <%= f.password_field :password_confirmation, class: 'form-control' %>
