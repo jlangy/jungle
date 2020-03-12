@@ -4,7 +4,7 @@ A mini e-commerce application built with Rails 4.2
 
 Final Product
 
-!['Desktop Display'](https://github.com/jlangy/tweeter/blob/master/docs/full-size.png)
+!['Desktop Display'](https://github.com/jlangy/jungle/blob/master/docs/Screenshot%20from%202020-03-11%2018-38-35.png)
 
 
 ## Setup
